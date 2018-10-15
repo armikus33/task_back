@@ -9,7 +9,7 @@ var app = express();
 
 // Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb://armikus:gertruda1@ds263571.mlab.com:63571/first_task';
+var dev_db_url = 'mongodb://admin:password@ds263571.mlab.com:63571/first_task';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
